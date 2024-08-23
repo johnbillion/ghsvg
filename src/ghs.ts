@@ -90,6 +90,13 @@ export async function getAccountFragment(
       ) {
         return;
       }
+      const fieldsToRemove = [
+        'membersCanForkPrivateRepositories',
+        'webCommitSignoffRequired',
+      ]
+      if (fieldsToRemove.includes(field.name)) {
+        return;
+      }
       return field.name;
     })
     .filter(Boolean);
