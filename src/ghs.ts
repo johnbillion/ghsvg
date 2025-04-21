@@ -18,10 +18,6 @@ export async function request(
         ? await axios.default.get(url, config)
         : await axios.default.post(url, {query: query}, config);
 
-    if (response.errors) {
-      console.error(`API failure: ${response.errors[0].message}`);
-      process.exit(1);
-    }
     if (response.data.error) {
       console.error(`API failure: ${response.data.error}`);
       process.exit(1);
