@@ -1,14 +1,12 @@
 # GHSVG
 
-[![CI](https://github.com/shivammathur/ghsvg/actions/workflows/ci.yaml/badge.svg)](https://github.com/shivammathur/ghsvg/actions/workflows/ci.yaml)
-
 Create an SVG of your GitHub Sponsors
 
-<a href="https://github.com/sponsors/shivammathur"><img src="https://setup-php.com/sponsors.svg?" alt="Sponsor shivammathur"></a>
+<a href="https://github.com/sponsors/johnbillion"><img src="https://cdn.jsdelivr.net/gh/johnbillion/johnbillion@latest/sponsors.svg" alt="Sponsor johnbillion"></a>
 
 ## Install
 ```bash
-npm install --save-dev ghsvg
+npm install --save-dev @johnbillion/ghsvg
 ```
 
 ## Configure
@@ -52,7 +50,7 @@ Configuration file can be
 ##### .ghsrc.json or .ghsrc.json5
 ```json
 {
-  "username": "shivammathur",
+  "username": "johnbillion",
   "outFile": "sponsors.svg",
   "range": [1, 12000],
   "svgWidth": 1024,
@@ -63,7 +61,7 @@ Configuration file can be
 ##### .ghsrc.js or .ghsrc.cjs
 ```javascript
 module.exports = {
-  "username": "shivammathur",
+  "username": "johnbillion",
   "outFile": "sponsors.svg",
   "range": [1, 12000],
   "svgWidth": 1024,
@@ -73,7 +71,7 @@ module.exports = {
 
 ##### .ghsrc or .ghsrc.yaml
 ```yaml
-username: shivammathur
+username: johnbillion
 outFile: sponsors.svg
 range: [1, 12000]
 svgWidth: 1024
@@ -82,7 +80,7 @@ svgImageWidth: 64
 
 ##### .ghsrc.toml
 ```toml
-username = "shivammathur"
+username = "johnbillion"
 outFile = "sponsors.svg"
 range = [ 1, 12_000 ]
 svgWidth = 1_024
@@ -100,6 +98,10 @@ In addition to using a configuration file, you can also specify the configuratio
 ```bash
 npx ghsvg --help
 ```
+
+## History
+
+This package originated as a fork of [GHSVG by Shivam Mathur](https://github.com/shivammathur/ghsvg). Thanks Shivam!
 
 ## License
 

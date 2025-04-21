@@ -1,5 +1,5 @@
 {
-  "name": "ghsvg",
+  "name": "@johnbillion/ghsvg",
   "version": "0.0.4",
   "description": "Create an SVG of your GitHub Sponsors",
   "exports": "./lib/index.js",
@@ -9,19 +9,19 @@
   "types": "./lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shivammathur/ghsvg.git"
+    "url": "git+https://github.com/johnbillion/ghsvg.git"
   },
   "keywords": [
     "github",
     "sponsors",
     "svg"
   ],
-  "author": "shivammathur",
+  "author": "johnbillion",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shivammathur/ghsvg/issues"
+    "url": "https://github.com/johnbillion/ghsvg/issues"
   },
-  "homepage": "https://github.com/shivammathur/ghsvg#readme",
+  "homepage": "https://github.com/johnbillion/ghsvg#readme",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "clear-cache": "rm -rf cache",

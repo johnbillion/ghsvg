@@ -38,5 +38,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PAT }}
         run: |
           echo "${{ github.repository_owner }}" > other.txt
-          node lib/index.js -u shivammathur -os other.txt
+          node lib/index.js -u johnbillion -os other.txt
           cat sponsors.svg
