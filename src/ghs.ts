@@ -81,8 +81,7 @@ export async function getAccountFragment(
         return `avatarUrl(size: ${avatar_size})`;
       } else if (
         field.args.length ||
-        field.type.ofType?.kind !== 'SCALAR' ||
-        field.name === 'membersCanForkPrivateRepositories'
+        field.type.ofType?.kind !== 'SCALAR'
       ) {
         return;
       }
